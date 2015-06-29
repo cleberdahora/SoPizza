@@ -2,7 +2,7 @@
     "name": "SoPizza",
     "description": "Aulas de Node.js",
     "author":"Cléber <cleberdahora@hotmail.com>",
-    "main": "server.js",
+    "main": "index.html",
     "version":"0.0.1",
     "private": true,
     "dependencies":{
