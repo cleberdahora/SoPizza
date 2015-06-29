@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Só Pizza</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Aumente o faturamento de sua pizzaria!">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1,maximum-scale=1, minimum-scale=1, width=device-width,height=device-height, target-densitydpi=device-dpi"/>
+
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:600" type="text/css" rel="stylesheet" />
+        <link href="css/estilo.css" type="text/css" rel="stylesheet" />
+        <link href="css/bootstrap-modal.css" rel="stylesheet"/>
+        <link href="css/bootstrap-modal-bs3patch.css" rel="stylesheet"/>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="img/pizza.ico"/>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBzipqxYpGFMG23NzGMO7swqZVgKfpM8wU&amp;sensor=true"></script>
+        
+        <script type="text/javascript" src="js/infobox.js"></script>
+        <script type="text/javascript" src="js/maps.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.custom.min.js"></script>
+        <script type="text/javascript" src="js/animation.js"></script>
+
+
+        <style>
+            body {
+
+            }
+            #mapa{
+                visibility: hidden;
+                height:20px;
+                margin: 0;
+            }
+            .back3{
+                background-color: #993333;
+                width:400px;
+                height: 40px;
+                margin-left: 480px;
+            }
+            .back3> h4{
+                padding-top:9px;
+            }
+
+            .back1{
+                background: url(img/87456__delicious-pizza_p.jpg) no-repeat center top fixed;
+
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .back{
+                padding-bottom: 40px;
+                color: #5a5a5a;
+
+                background-color:#FFD98A;
+                background-image:url('img/background.png');
+
+
+            }
+            h1,h3{
+                text-shadow: black 0.1em 0.1em 0.2em;
+                color: white;
+            }
+            h4,h5{
+                text-shadow: black 0.1em 0.1em 0.2em;
+                color: white;
+            }
+            .right{
+                margin-left:220px;
+            }
+            .right2{
+                margin-left:800px;
+                margin-top:-70px;
+            }
+            .b1{
+                font-size:17px;
+                background: #a9302a;
+                color:white;
+                height:40px;
+                border-bottom: 0;
+                border-top: 0;
+                border-left: 0;
+                border-right:0;
+                box-shadow: 1px 1px 1px 1px black;
+
+            }
+            input[type="text"]{
+                font-size:17px;
+                border-radius: 0;
+                height:33px;
+                border-bottom: 0;
+                margin-top: 10px;
+                border-top: 0;
+                border-left: 0;
+                border-right:0;
+                box-shadow: 1px 1px 1px 1px black;
+                padding: 4px 100px;
+            }
+            .ui-autocomplete { 
+                background: #fff; 
+                border-top: 1px solid #ccc;
+                cursor: pointer; 
+                font: 15px 'Open Sans',Arial;
+                margin-left: 3px;
+                width: 407px !important;
+                position: fixed;
+            }
+
+            .ui-autocomplete .ui-menu-item { 
+                list-style: none outside none;
+                padding: 7px 0 9px 10px;
+            }
+
+            .ui-autocomplete .ui-menu-item:hover { background: #eee }
+
+            .ui-autocomplete .ui-corner-all { 
+                color: #666 !important;
+                display: block;
+            }
+
+            .span1>h1{
+                color:#faa732;
+                margin-left:10px;
+                margin-top:1px;
+            }
+            .span2,.one>h5{
+                color:#faa732;
+                padding-left:90px;
+                
+
+            }
+
+            @media (max-width: 767px) {
+                input[type="text"]{
+
+                    padding: 4px 40px;
+                }
+                .ui-autocomplete { 
+                    width: 290px !important;
+                }
+                .row, right{
+                    visibility: hidden;
+
+                }
+                .row> .span3{
+                    height:0;
+                }
+                h3{
+                    padding-top: -200px;
+                }
+
+                form{
+                    margin-top: -75px;
+                }
+                h1{
+                    margin-top:-20px;
+                }
+                img{
+                    margin-top:-30px;
+                }
+                .right2{
+                    visibility: hidden;
+                    height:20px;
+                }
+
+            }
+
+        </style> 
+
+
+    </head>
+    <body class="back1">
+
+        <br><br>
+        <div align="center"><img src="img/logo.svg" alt="" style="width:250px">
+            <div class="right2 row">
+                <div class="span2 one">
+                    <h5><a href="#">Cadastre sua pizzaria</a></h5>
+                </div>
+
+                <div class="span1">
+                    <h1>|</h1>
+                </div>
+
+                <div class="span1">
+                    <h5><a href="https://play.google.com/store/apps/details?id=com.so_pizza.app"> Baixe o app</a></h5> 
+                </div>
+            </div>
+            <br><br><br><br>
+            <h1>Experimente novos sabores</h1>
+            <h3>Encontre aqui as melhores pizzarias da região</h3>
+
+        </div>
+        <br><br><br>
+        <div align="center">
+            <form method="post" action="index.html">
+
+
+                <button class="b1" id="btnEnviar"  name="btnEnviar">Buscar nas proximidades</button> <font color="white" style="text-shadow: black 0.1em 0.1em 0.2em;"><b>&nbsp;&nbsp; ou</b></font>
+
+
+                <input type="text" id="txtEndereco" name="txtEndereco" placeholder="99999-999 ou endereço">&nbsp;
+                <button class="b1" id="btnEndereco" name="btnEndereco" style="width:100px">Buscar!</button>
+
+                <input type="hidden" id="txtLatitude" name="txtLatitude" />
+                <input type="hidden" id="txtLongitude" name="txtLongitude" />
+            </form>
+            <div class="row right">
+                <div class="span3">
+                    <img src="img/procure.png" style="width:190px" id="i">
+                </div>
+                <div class="span3">
+                    <img src="img/escolha.png" style="width:190px" id="i2">
+                </div>
+                <div class="span3">
+                    <img src="img/ligue.png" style="width:190px" id="i3">
+                </div>
+            </div>
+
+            <h3><a href="#anc">Ver mais</a></h3>
+
+        </div>
+
+        <div class="back">
+            <br>
+            <div align="center" class="back3"><h4>Resultados</h4></div>
+            <div id="mapa"></div>
+            <br><br>
+
+
+
+            <footer style='background:#993333; color:white; '>
+                <br>
+                <div align='center'><p><b> ©2015 Só Pizza - Todos os direitos reservados</b></p>
+                    <p><b>Contato: <font color="orange">(11) 96561-4986</font> ou <font color="orange">contato@sopizzabrasil.com.br</font></b></p> 
+                </div>
+            </footer>    
+        </div>
+
+    </body>
+
+</html>

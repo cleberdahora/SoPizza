@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pizzarias</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Aumente o faturamento de sua pizzaria!">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1,maximum-scale=1, minimum-scale=1, width=device-width,height=device-height, target-densitydpi=device-dpi"/>
+
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:600" type="text/css" rel="stylesheet" />
+        <link href="css/estilo.css" type="text/css" rel="stylesheet" />
+        <link href="css/bootstrap-modal.css" rel="stylesheet"/>
+        <link href="css/bootstrap-modal-bs3patch.css" rel="stylesheet"/>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="img/pizza.ico"/>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBzipqxYpGFMG23NzGMO7swqZVgKfpM8wU&amp;sensor=false"></script>
+
+        <script type="text/javascript" src="js/infobox.js"></script>
+        <script type="text/javascript" src="js/maps2.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.custom.min.js"></script>
+        <script type="text/javascript" src="js/animation.js"></script>
+
+        <style>
+            .infoBox {
+                background-color: #FFF; 
+                width: 300px; 
+                font-family: Arial, Helvetica, sans-serif; 
+                font-size: 14px; 
+                border: 2px solid #df8505;
+                border-radius: 3px;
+                margin-top: 10px }
+            .infoBox p {
+                padding: 0 15px
+            }
+            .infoBox:before { border-left: 10px solid transparent; 
+                              border-right: 10px solid transparent; 
+                              border-bottom: 10px solid #df8505; 
+                              top: -10px; content: "";
+                              height: 0;
+                              position: absolute;
+                              width: 0; 
+                              left: 138px }
+            body {
+
+            }
+            #mapa{
+
+                height:500px;
+                margin:0 0;
+            }
+            .back1{
+                background: url(img/87456__delicious-pizza_p.jpg) no-repeat center top fixed;
+
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .back{
+                background-color:#FFD98A;
+                background-image:url('img/background.png');
+
+
+            }
+            h1,h3{
+                text-shadow: black 0.1em 0.1em 0.2em;
+                color: white;
+            }
+            .right{
+                margin-left:220px;
+            }
+            .b1{
+                font-size:17px;
+                background: #a9302a;
+                color:white;
+                height:40px;
+                border-bottom: 0;
+                border-top: 0;
+                border-left: 0;
+                border-right:0;
+                box-shadow: 1px 1px 1px 1px black;
+
+            }
+            input[type="text"]{
+                font-size:17px;
+                border-radius: 0;
+                height:33px;
+                border-bottom: 0;
+                margin-top: 10px;
+                border-top: 0;
+                border-left: 0;
+                border-right:0;
+                box-shadow: 1px 1px 1px 1px black;
+                padding: 4px 100px;
+            }
+
+
+            @media (max-width: 767px) {
+                input[type="text"]{
+
+                    padding: 4px 40px;
+                }
+            }
+
+        </style> 
+        <script>
+
+
+
+
+        </script>
+    </head>
+    <body>
+        <div class="back">
+
+            <div id="mapa"></div>
+
+            <br><br><br><br><br><br>
+            <footer style='background:#993333; color:white; '>
+                <br>
+                <div align='center'><p><b> ©2015 Só Pizza - Todos os direitos reservados</b></p>
+                    <p><b>Contato: <font color="orange">(11) 96561-4986</font> ou <font color="orange">contato@sopizzabrasil.com.br</font></b></p> 
+                </div>
+            </footer>    
+        </div> 
+    </body>
+</html>
