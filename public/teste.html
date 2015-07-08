@@ -12,24 +12,7 @@ and open the template in the editor.
         <link rel="shortcut icon" href="img/pizza.ico"/>
         <script type="text/javascript" src="config/database.js"></script>
         
-        <script>
-            
-    var db_config = require('../config/database.js'),
-    mysql = require('mysql'),
-    db_connection = mysql.createConnection(db_config);
-    
-    
-    
-db_connection.connect();
 
-db_connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
-  if (err) throw err;
-
-  console.log('The solution is: ', rows[0].solution);
-});
-
-connection.end();
-        </script>
     
     </head>
     
