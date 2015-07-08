@@ -1,6 +1,6 @@
 {
     "name": "SoPizza",
-    "description": "Aulas de Node.js",
+    "description": "Só Pizza Brasil",
     "author":"Cléber <cleberdahora@hotmail.com>",
     "main": "server.js",
     "version":"0.0.1",
