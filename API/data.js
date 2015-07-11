@@ -1,5 +1,6 @@
 var db_config = require('../config/database.js'),
     mysql = require('mysql'),
+     fs = require('fs'),
     db_connection = mysql.createConnection(db_config);
     
  connection.connect();
