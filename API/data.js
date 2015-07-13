@@ -1,16 +1,9 @@
-var db_config = require('../config/database.js'),
-    mysql = require('mysql'),
-    
-    db_connection = mysql.createConnection(db_config);
-    
- connection.connect();
+
+req.getConnection(function(err,connection){
+ connection.query('SELECT * FROM dados',[],function(err,result){
+ if(err) return res.status(400).json(err);
  
-
-connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
-  if (err) throw err;
-else{
-  console.log('The solution is: ', rows[0].solution);
-}
+ return res.status(200).json(result);
+ 
+ });
 });
-
-connection.end();
