@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var routes = require('./routes/data');
+var data = require('./routes/data');
 var mysql = require('mysql');
 
 
