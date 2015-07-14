@@ -4,6 +4,7 @@ var marker;
 var idInfoBoxAberto;
 var infoBox = [];
 
+
 function abrirInfoBox(id, marker) {
     if (typeof (idInfoBoxAberto) == 'number' && typeof (infoBox[idInfoBoxAberto]) == 'object') {
         infoBox[idInfoBoxAberto].close();

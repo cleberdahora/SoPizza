@@ -1,30 +1,38 @@
 var express = require('express');
 var mysql = require('mysql');
 var router = express.Router();
+var fs = require('fs');
 
-var database = "sopizza";
-var table = "dados";
 
 
 
 router.get('/', function (request, res){
 
-var client = mysql.createClient({
+var connection = mysql.createConnection({
     user: 'root',
     password: 'cletha415623',
     host: 'localhost',
-    port: 3306
+    database:'sopizza'
+    
+    
 });
 
-client.query('USE' + database);
-    client.query(
-           'SELECT * FROM'+ table,
-    function(err, results, fields){
-        if(err){
-            throw err;
-    }
-        res.send(results);   
-    });
+connection.query('SELECT * from dados', function(err, rows, fields) {
+  if (!err)
+  {
+      
+    
+    var fs = require('fs');
+    fs.writeFile('public/js/pontos.json',rows, function (err) {
+    if (err) 
+    {return console.log(err);
+    console.log('Hello World > helloworld.txt');
+}
+  else
+    console.log('Error while performing Query.');
+});
+
+connection.end();
             
 });
 

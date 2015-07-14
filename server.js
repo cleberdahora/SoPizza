@@ -15,7 +15,7 @@ app.set('public_html', __dirname + '/public_html');
 app.set('public_html engine', 'html');
 
 app.get('/', function (request, response) {
-    response.render('index')
+    response.render('index');
 });
 
 app.use('/dados', data);
