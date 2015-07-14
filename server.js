@@ -1,19 +1,9 @@
 var express = require('express');
 var app = express();
-var routes = require('routes');
+var routes = require('./routes/data');
 var mysql = require('mysql');
 
-var database = "sopizza";
-var table = "dados";
 
-var client = mysql.createClient({
-    user: 'root',
-    password: 'cletha415623',
-    host: 'localhost',
-    port: 3306
-});
-
-client.query('USE' + database);
 
 
 app.set('port', (process.env.PORT || 5000));
@@ -28,19 +18,7 @@ app.get('/', function (request, response) {
     response.render('index')
 });
 
-app.get('/dados', function (request, res){
-
-
-    client.query(
-           'SELECT * FROM'+ table,
-    function(err, results, fields){
-        if(err){
-            throw err;
-    }
-        res.send(results);   
-    });
-            
-});
+app.use('/dados', data);
 
 app.listen(app.get('port'), function () {
     console.log('Node app is running on port', app.get('port'));
