@@ -21,12 +21,7 @@ connection.query('SELECT * from dados', function(err, rows, fields) {
   if (!err)
   {
       
-    
-    var fs = require('fs');
-    fs.writeFile('public/js/pontos.json',rows, function (err) {
-    if (err) 
-    {return console.log(err);
-    console.log('Hello World > helloworld.txt');
+    console.log('',rows)
 }
   else
     console.log('Error while performing Query.');
