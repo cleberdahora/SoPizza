@@ -1,29 +1,29 @@
 {
-    "name": "SoPizza",
-    "description": "Só Pizza Brasil",
-    "author":"Cléber <cleberdahora@hotmail.com>",
-    "main": "server.js",
-    "version":"0.0.1",
-    "private": true,
-    "dependencies":{
-        "routes":"*",
-        "express": "~4.7.2",
-        "mysql": "*",
-        "browserify":"*",
-        "browserify-fs":"*",
-        "express-myconnection":"*",
-        "morgan": "~1.2.2",
-        "body-parser":"~1.5.2",
-        "jade":"*",
-        "method-override":"~2.1.2"
-    },
-    "engines": {
+  "name": "SoPizza",
+  "description": "Só Pizza Brasil",
+  "author": "Cléber <cleberdahora@hotmail.com>",
+  "main": "server.js",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "~1.5.2",
+    "browserify": "*",
+    "browserify-fs": "*",
+    "express": "~4.7.2",
+    "express-myconnection": "*",
+    "getmodule": "0.0.9",
+    "jade": "*",
+    "method-override": "~2.1.2",
+    "morgan": "~1.2.2",
+    "mysql": "*",
+    "routes": "*"
+  },
+  "engines": {
     "node": "0.12.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/heroku/so-pizza-brasil2"
   },
-    "license": "MIT"
-    
+  "license": "MIT"
 }

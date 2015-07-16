@@ -5,30 +5,29 @@ var fs = require('fs');
 
 
 
+router.get('/', function (req, res) {
 
-router.get('/', function (request, res){
+    var connection = mysql.createConnection({
+        user: 'root',
+        password: 'cletha415623',
+        host: 'localhost',
+        database: 'sopizza'
 
-var connection = mysql.createConnection({
-    user: 'root',
-    password: 'cletha415623',
-    host: 'localhost',
-    database:'sopizza'
-    
-    
-});
 
-connection.query('SELECT * from dados', function(err, rows, fields) {
-  if (!err)
-  {
-      
-    console.log('',rows)
-}
-  else
-    console.log('Error while performing Query.');
-});
+    });
 
-connection.end();
-            
+    connection.query('SELECT * from dados', function (err, rows, fields) {
+        if (!err)
+        {
+            res.send(rows);        
+        }
+        
+        else
+            console.log('Error while performing Query.');
+    });
+
+    connection.end();
+
 });
 
 

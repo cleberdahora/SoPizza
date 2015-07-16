@@ -3,6 +3,16 @@ var map;
 var marker;
 var idInfoBoxAberto;
 var infoBox = [];
+var request = require('superagent');
+ 
+request
+         .get('/dados')
+      
+         .end(function (err, res) {
+                       
+            console.log(res);
+    
+          });
 
 
 function abrirInfoBox(id, marker) {
@@ -18,7 +28,7 @@ function abrirInfoBox(id, marker) {
 function carregarPontos() {
 
 
-    $.getJSON('js/pontos.json', function (pontos) {
+    $.get('/dados', function (pontos) {
 
         $.each(pontos, function (index, ponto) {
 
