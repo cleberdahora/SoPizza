@@ -4,25 +4,18 @@ var marker;
 var idInfoBoxAberto;
 var infoBox = [];
 var request = require('superagent');
- 
+
 request
-         .get('/dados')
-      
-         .end(function (err, res) {
-                       
+        .get('/dados')
+
+        .end(function (err, res) {
+
             console.log(res);
-    
-          });
+
+        });
 
 
-function abrirInfoBox(id, marker) {
-    if (typeof (idInfoBoxAberto) == 'number' && typeof (infoBox[idInfoBoxAberto]) == 'object') {
-        infoBox[idInfoBoxAberto].close();
-    }
 
-    infoBox[id].open(map, marker);
-    idInfoBoxAberto = id;
-}
 
 
 function carregarPontos() {
@@ -30,31 +23,29 @@ function carregarPontos() {
 
     $.get('/dados', function (pontos) {
 
-        $.each(pontos, function (index, ponto) {
+         $.each(pontos, function (index, ponto) {
 
-            var marker = new google.maps.Marker({
-                icon: 'img/pizza.png',
-                position: new google.maps.LatLng(ponto.Latitude, ponto.Longitude),
-                title: "Meu ponto personalizado! :-D",
-                map: map
+                        var marker = new google.maps.Marker({
+                            icon: 'img/pizza.png',
+                            position: new google.maps.LatLng(ponto.Latitude, ponto.Longitude),
+                            title: ponto.Endereco,
+                            map: map,
+                            pixelOffset: new google.maps.Size(-150, 0)
 
 
+                        });
 
-            });
+                        var infowindow = new google.maps.InfoWindow({
+                            content: "<a href='#' target=''>"+ ponto.Nome +"</a>",
+                            maxWidth: 700
+                        });
 
-            var myOptions = {
-                content: "<p>Conteúdo do InfoBox</p>",
-                pixelOffset: new google.maps.Size(-150, 0)
-            };
 
-            infoBox[ponto.Id] = new InfoBox(myOptions);
-            infoBox[ponto.Id].marker = marker;
+                        google.maps.event.addListener(marker, 'click', function () {
+                            infowindow.open(map, marker);
+                        });
 
-            infoBox[ponto.Id].listener = google.maps.event.addListener(marker, 'click', function (e) {
-                abrirInfoBox(ponto.Id, marker);
-            });
-
-        });
+                    });
 
 
     });
@@ -88,6 +79,7 @@ function initialize() {
         draggable: true,
         icon: 'img/ico_1.png',
         animation: google.maps.Animation.BOUNCE
+
     });
 
     marker.setPosition(latlng);
