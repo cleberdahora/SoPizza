@@ -61,7 +61,7 @@
                         });
 
                         var infowindow = new google.maps.InfoWindow({
-                            content: "<h4><a href='#' target=''>"+ ponto.Nome +"</a></h4>",
+                            content: "<h4><a href='pizzaria.html?id= "+ ponto.id+"' target=''>"+ ponto.Nome +"</a></h4>"+ "<h5>"+ ponto.Endereco+"</h5>",
                             maxWidth: 700
                         });
 
