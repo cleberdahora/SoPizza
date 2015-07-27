@@ -6,6 +6,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "cloudinary":"*",
     "body-parser": "~1.5.2",
     "browserify": "*",
     "browserify-fs": "*",

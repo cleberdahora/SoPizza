@@ -1,12 +1,10 @@
 var geocoder;
 var map;
 var marker;
-var idInfoBoxAberto;
-var infoBox = [];
 var request = require('superagent');
 
 request
-        .get('/dados')
+        .get('/consult')
 
         .end(function (err, res) {
 
@@ -21,12 +19,12 @@ request
 function carregarPontos() {
 
 
-    $.get('/dados', function (pontos) {
+    $.get('/consult', function (pontos) {
 
          $.each(pontos, function (index, ponto) {
 
                         var marker = new google.maps.Marker({
-                            icon: 'img/pizza.png',
+                            icon: 'http://res.cloudinary.com/hhktgqpms/image/upload/v1438017936/pizza_xrfdfi.png',
                             position: new google.maps.LatLng(ponto.Latitude, ponto.Longitude),
                             title: ponto.Endereco,
                             map: map,
@@ -77,7 +75,7 @@ function initialize() {
     marker = new google.maps.Marker({
         map: map,
         draggable: true,
-        icon: 'img/ico_1.png',
+        icon: 'http://res.cloudinary.com/hhktgqpms/image/upload/v1438017935/ico_1_eucvwo.png',
         animation: google.maps.Animation.BOUNCE
 
     });

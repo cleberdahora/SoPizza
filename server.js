@@ -1,10 +1,16 @@
 require('getmodule');
 var express = require('express');
 var app = express();
-var data = require('./routes/data');
+var cloudinary = require('cloudinary');
+var consult = require('./routes/consulta');
+
 var mysql = require('mysql');
 
-
+cloudinary.config({ 
+  cloud_name: 'hhktgqpms', 
+  api_key: '994378998746214', 
+  api_secret: 'QQMIu8W308hXqxZiXtPO9gPYVXM' 
+});
 
 
 app.set('port', (process.env.PORT || 5000));
@@ -22,7 +28,8 @@ app.get('/', function (request, response) {
 
 
 
-app.use('/dados', data);
+app.use('/consult', consult);
+
 
 
 

@@ -15,12 +15,13 @@ and open the template in the editor.
         <link href="css/bootstrap-modal-bs3patch.css" rel="stylesheet"/>
         <link href="css/bootstrap.css" rel="stylesheet"/>
         <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
-        
+
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzipqxYpGFMG23NzGMO7swqZVgKfpM8wU&amp;sensor=false"></script>
-       
+
         <script type="text/javascript" src="js/jquery-ui.custom.min.js"></script>
-        <script type="text/javascript" src="js/main4.js"></script>
+        <script type="text/javascript" src="js/consult.js"></script>
+
         <style>
 
             .b2{
@@ -36,6 +37,8 @@ and open the template in the editor.
                 box-shadow: 1px 1px 1px 1px black;
                 margin-left: 300px;
 
+            }
+            #PNome{width:100px;
             }
             .back3{ 
                 height:350px;  
@@ -68,7 +71,7 @@ and open the template in the editor.
                 color: #5a5a5a;
 
                 background-color:#FFD98A;
-                background-image:url('img/background.png');
+                background-image:url('http://res.cloudinary.com/hhktgqpms/image/upload/v1438017931/background_ccnxtw.png');
 
 
             }
@@ -84,7 +87,7 @@ and open the template in the editor.
 
             }
             .minhaClass {
-                background: url(img/fundo_verde.png) no-repeat center center;
+                background: url(http://res.cloudinary.com/hhktgqpms/image/upload/v1438022001/fundo_verde_upilfa.png) no-repeat center center;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -104,7 +107,7 @@ and open the template in the editor.
         <div align="center" class="back3 minhaClass">
 
             <br><br>
-            <img src="img/logo.svg" class="ca" alt="" style="width:170px">
+            <img src="http://res.cloudinary.com/hhktgqpms/image/upload/v1438017937/logo_i5i5ys.svg" class="ca" alt="" style="width:170px">
 
             <div class="back4">
                 <br>
@@ -116,8 +119,13 @@ and open the template in the editor.
                         <div class="back5"></div>
                     </div>
                     <div class="span3">
-                        <div><h2>Texto</h2></div>
-                        <div><h5>Texto</h5></div>
+                        <div>
+                            <h2 id="divNome"></h2>
+                        </div>
+                        <div>
+                            <h5 id="divEndereco"></h5>
+
+                        </div>
                         <button class="b2">Ligar</button>
                     </div>
                 </div>
@@ -130,6 +138,7 @@ and open the template in the editor.
                 <div class="row">
                     <div class="span7">
                         <div align="center" class="back6"><h3>Cardápio</h3></div>
+                       
                     </div>
                     <div class="span5">
                         <div align="center" class="back6"><h3>Fotos do Local</h3></div>

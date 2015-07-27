@@ -35,7 +35,7 @@ function initialize() {
     marker = new google.maps.Marker({
         map: map,
         draggable: true,
-        icon: 'img/ico_1.png',
+        icon: 'http://res.cloudinary.com/hhktgqpms/image/upload/v1438017935/ico_1_eucvwo.png',
         animation: google.maps.Animation.BOUNCE
     });
 
