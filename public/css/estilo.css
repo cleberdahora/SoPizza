@@ -95,14 +95,14 @@ body{
 }
 .b1{
     font-size:17px;
-    background: #a9302a;
+    background: #a70105;
     color:white;
     height:40px;
     border-bottom: 0;
     border-top: 0;
     border-left: 0;
     border-right:0;
-    box-shadow: 1px 1px 1px 1px black;
+    box-shadow: 0.5 0.5   black;
 
 }
 
@@ -242,7 +242,7 @@ input{
         margin-top:-60px;
     }
     .h1{
-        font-size:30px;
+        font-size:35px;
         margin-top: -160px;
     }
     .h3{
