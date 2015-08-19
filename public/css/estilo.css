@@ -102,7 +102,7 @@ body{
     border-top: 0;
     border-left: 0;
     border-right:0;
-    box-shadow: 0.5 0.5   black;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em  black;
 
 }
 
@@ -280,5 +280,7 @@ form{
                     visibility: hidden;
                     height:20px;
                 }
+               body{ overflow-x: hidden;
+               }
 
 }
