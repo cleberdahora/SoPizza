@@ -1,11 +1,17 @@
 require('getmodule');
 var express = require('express');
+//var mongoose = require('mongoose');
+  
 var app = express();
 var cloudinary = require('cloudinary');
 var consult = require('./routes/consulta');
+var consultcard = require('./routes/consulta_card');
 
 var mysql = require('mysql');
 
+//mongoose.connect('mongodb://localhost/SoPizza');
+
+//var db = mongoose.connect;
 cloudinary.config({ 
   cloud_name: 'hhktgqpms', 
   api_key: '994378998746214', 
@@ -29,6 +35,7 @@ app.get('/', function (request, response) {
 
 
 app.use('/consult', consult);
+app.use('/cardap', consultcard);
 
 
 

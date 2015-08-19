@@ -29,155 +29,6 @@ and open the template in the editor.
         <script type="text/javascript" src="js/animation.js"></script>
 
 
-        <style>
-
-            #mapa{
-                visibility: hidden;
-                height:20px;
-                margin: 0;
-            }
-            .back3{
-                background-color: #993333;
-                width:400px;
-                height: 40px;
-                margin-left: 480px;
-            }
-            .back3> h4{
-                padding-top:9px;
-            }
-
-            .back1{
-                background: url(http://res.cloudinary.com/hhktgqpms/image/upload/v1438017944/87456__delicious-pizza_p_mywmsz.jpg) no-repeat center top fixed;
-
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-            }
-            .back{
-                padding-bottom: 40px;
-                color: #5a5a5a;
-
-                background-color:#FFD98A;
-                background-image:url('http://res.cloudinary.com/hhktgqpms/image/upload/v1438017931/background_ccnxtw.png');
-
-
-            }
-            h1,h3{
-                text-shadow: black 0.1em 0.1em 0.2em;
-                color: white;
-            }
-            h4,h5{
-                text-shadow: black 0.1em 0.1em 0.2em;
-                color: white;
-            }
-            .right{
-                margin-left:220px;
-            }
-            .right2{
-                margin-left:800px;
-                margin-top:-70px;
-            }
-            h5> a:hover{
-                text-decoration:none;
-
-                color:yellow;
-
-            }
-            .b1{
-                font-size:17px;
-                background: #a9302a;
-                color:white;
-                height:40px;
-                border-bottom: 0;
-                border-top: 0;
-                border-left: 0;
-                border-right:0;
-                box-shadow: 1px 1px 1px 1px black;
-
-            }
-            input[type="text"]{
-                font-size:17px;
-                border-radius: 0;
-                height:33px;
-                border-bottom: 0;
-                margin-top: 10px;
-                border-top: 0;
-                border-left: 0;
-                border-right:0;
-                box-shadow: 1px 1px 1px 1px black;
-                padding: 4px 100px;
-            }
-            .ui-autocomplete { 
-                background: #fff; 
-                border-top: 1px solid #ccc;
-                cursor: pointer; 
-                font: 15px 'Open Sans',Arial;
-                margin-left: 3px;
-                width: 407px !important;
-                position: fixed;
-            }
-
-            .ui-autocomplete .ui-menu-item { 
-                list-style: none outside none;
-                padding: 7px 0 9px 10px;
-            }
-
-            .ui-autocomplete .ui-menu-item:hover { background: #eee }
-
-            .ui-autocomplete .ui-corner-all { 
-                color: #666 !important;
-                display: block;
-            }
-
-            .span1>h1{
-                color:#faa732;
-                margin-left:10px;
-                margin-top:1px;
-            }
-            .span2,.one>h5{
-                color:#faa732;
-                padding-left:90px;
-
-
-            }
-
-            @media (max-width: 767px) {
-                input[type="text"]{
-
-                    padding: 4px 40px;
-                }
-                .ui-autocomplete { 
-                    width: 290px !important;
-                }
-                .row, right{
-                    visibility: hidden;
-
-                }
-                .row> .span3{
-                    height:0;
-                }
-                h3{
-                    padding-top: -200px;
-                }
-
-                form{
-                    margin-top: -75px;
-                }
-                h1{
-                    margin-top:-20px;
-                }
-                img{
-                    margin-top:-30px;
-                }
-                .right2{
-                    visibility: hidden;
-                    height:20px;
-                }
-
-            }
-
-        </style> 
 
 
     </head>
@@ -185,9 +36,9 @@ and open the template in the editor.
 
         <br><br>
         <div align="center"><img src="http://res.cloudinary.com/hhktgqpms/image/upload/v1438017937/logo_i5i5ys.svg" alt="" style="width:250px">
-            <div class="right2 row">
+            <div class="row" id="right2">
                 <div class="span2 one">
-                    <h5><a href="#">Cadastre sua pizzaria</a></h5>
+                    <h5 class="h5"><a href="#" class="yellow">Cadastre sua pizzaria</a></h5>
                 </div>
 
                 <div class="span1">
@@ -195,17 +46,17 @@ and open the template in the editor.
                 </div>
 
                 <div class="span1">
-                    <h5><a href="https://play.google.com/store/apps/details?id=com.so_pizza.app"> Baixe o app</a></h5> 
+                    <h5 class="h5"><a href="https://play.google.com/store/apps/details?id=com.so_pizza.app" class="yellow"> Baixe o app</a></h5> 
                 </div>
             </div>
             <br><br><br><br>
-            <h1>Experimente novos sabores</h1>
-            <h3>Encontre aqui as melhores pizzarias da região</h3>
+            <h1 class="h1">Experimente novos sabores</h1>
+            <h3 class="h3">Encontre aqui as melhores pizzarias da região</h3>
 
         </div>
         <br><br><br>
         <div align="center">
-            <form method="post" action="index.html">
+            <form method="post" id="form" action="index.html">
 
 
                 <button class="b1" id="btnEnviar"  name="btnEnviar">Buscar nas proximidades</button> <font color="white" style="text-shadow: black 0.1em 0.1em 0.2em;"><b>&nbsp;&nbsp; ou</b></font>
@@ -217,7 +68,7 @@ and open the template in the editor.
                 <input type="hidden" id="txtLatitude" name="txtLatitude" />
                 <input type="hidden" id="txtLongitude" name="txtLongitude" />
             </form>
-            <div class="row right">
+            <div class="row" id="right">
                 <div class="span3">
                     <img src="http://res.cloudinary.com/hhktgqpms/image/upload/v1438017938/procure_v0abng.png" style="width:190px" id="i">
                 </div>
@@ -235,7 +86,7 @@ and open the template in the editor.
 
         <div class="back">
             <br>
-            <div align="center" class="back3"><h4>Resultados</h4></div>
+            <div align="center" class="back3"><h4 class="h4">Resultados</h4></div>
             <div id="mapa"></div>
             <br><br>
 
