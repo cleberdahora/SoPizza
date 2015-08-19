@@ -12,10 +12,11 @@
                 
                 .back{
                     margin-left: -20px;
-                    width: 340px;
+                    width: 350px;
+                    height:100%;
                 }
                 #mapa{
-                    margin-left: -20px;
+                    margin-left: -15px;
                     width: 355px;
                 }
                 footer
