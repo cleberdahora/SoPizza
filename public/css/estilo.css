@@ -230,9 +230,7 @@ input{
 
 }
 @media (max-width: 767px) {
-    .back1{
-        max-width:300px;
-    }
+   
     .back{
      margin-left: -20px;
      position:absolute;
