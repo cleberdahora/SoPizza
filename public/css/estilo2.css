@@ -1,11 +1,26 @@
 #mapa{
-
                 height:500px;
                 margin:0 0;
+               
             }
             .back{
                 background-color:#FFD98A;
                 background-image:url('http://res.cloudinary.com/hhktgqpms/image/upload/v1438017931/background_ccnxtw.png');
-
-
+            }
+            
+            @media (max-width: 767px) {
+                
+                .back{
+                    margin-left: -20px;
+                    width: 340px;
+                }
+                #mapa{
+                    margin-left: -20px;
+                    width: 355px;
+                }
+                footer
+                {
+                    margin-left: -20px;
+                    width: 360px;
+                }
             }
