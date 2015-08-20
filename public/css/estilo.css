@@ -229,6 +229,22 @@ input{
     clear: both;
 
 }
+@media (orientation: landscape) { 
+    #content {
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    /* final spec */
+    transform: rotate(-90deg);
+    }
+
 @media (max-width: 767px) {
    
     .back{
