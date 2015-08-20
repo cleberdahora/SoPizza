@@ -1,31 +1,96 @@
+.ui-autocomplete { 
+                background: #fff; 
+                border-top: 1px solid #ccc;
+                cursor: pointer; 
+                font: 15px 'Open Sans',Arial;
+                margin-left: 3px;
+                width: 506px !important;
+                position: fixed;
+            }
+             .ui-autocomplete .ui-menu-item { 
+                list-style: none outside none;
+                padding: 7px 0 9px 10px;
+            }
+
+            .ui-autocomplete .ui-menu-item:hover { background: #eee }
+
+            .ui-autocomplete .ui-corner-all { 
+                color: #666 !important;
+                display: block;
+            }
 #mapa{
-                height:500px;
-                margin:0 0;
-               
-            }
-            .back{
-                background-color:#FFD98A;
-                background-image:url('http://res.cloudinary.com/hhktgqpms/image/upload/v1438017931/background_ccnxtw.png');
-            }
-            
-            @media (max-width: 767px) {
-                
-                .back{
-                    margin-left: -20px;
-                    width: 390px;
-                    height:100%;
+    height:500px;
+    margin:0 0;
+
+}
+.back{
+    background-color:#FFD98A;
+    background-image:url('http://res.cloudinary.com/hhktgqpms/image/upload/v1438017931/background_ccnxtw.png');
+}
+.porcima{
+    position:relative;
+    margin-top: -480px; 
+}  
+
+
+#txtEndereco{
+    position:relative;
+    margin-top: -480px;
+    font-size:17px;
+    border-radius: 0;
+    height:33px;
+    border-bottom: 0;
+    margin-top: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    padding: 4px 150px;
+    box-shadow: 0.07em 0.07em 0.06em 0.06em  black;
+}
+.img{
+    
+    width:170px;
+}
+
+.b1{
+    margin-top: -400px;
+    position:relative;
+    font-size:17px;
+    background: #a70105;
+    color:white;
+    height:40px;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em  black;
+
+}
+
+@media (max-width: 767px) {
+    #txtEndereco{
+                    padding: 4px 42px;
                 }
-                #mapa{
-                    margin:0;
-                    width: 100%;
+                .ui-autocomplete { 
+                    width: 290px !important;
                 }
-                footer
-                {
-                    margin-left: -20px;
-                    width: 400px;
-                }
-                body{
-                    margin:0;
-                    padding:0;
-                    overflow-x: hidden;}
-            }
+
+    .back{
+        margin-left: -20px;
+        width: 390px;
+        height:100%;
+    }
+    #mapa{
+        margin:0;
+        width: 100%;
+    }
+    footer
+    {
+        margin-left: -20px;
+        width: 400px;
+    }
+    body{
+        margin:0;
+        padding:0;
+        overflow-x: hidden;}
+}
