@@ -45,13 +45,16 @@
     border-left: 0;
     border-right:0;
     padding: 4px 150px;
-    box-shadow: 0.07em 0.07em 0.06em 0.06em  black;
+    box-shadow: 0.07em 0.07em 0.05em 0.05em  black;
 }
 .img{
     
     width:170px;
 }
 
+.img2{
+    width:60px;
+}
 .b1{
     margin-top: -400px;
     position:relative;
@@ -68,11 +71,14 @@
 }
 
 @media (max-width: 767px) {
+    .img2{
+        visibility: hidden;
+    }
     #txtEndereco{
-                    padding: 4px 42px;
+                    padding: 4px 40px;
                 }
                 .ui-autocomplete { 
-                    width: 290px !important;
+                    width: 288px !important;
                 }
 
     .back{
