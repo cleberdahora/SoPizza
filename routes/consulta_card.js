@@ -8,10 +8,10 @@ var fs = require('fs');
 router.get('/', function (req, res) {
 
     var connection = mysql.createConnection({
-       user: 'u489056370_pizza',                             //user: 'root',
-       password: 'cletha415623',                             //password: 'cletha415623',
-       host: 'mysql.hostinger.com.br',                      //host: 'localhost',
-       database: 'u489056370_pizza'                         //database: 'sopizza'
+       user: 'b38e48d43b7b86',                             //user: 'root',
+       password: '9c107321f978bc6',                             //password: 'cletha415623',
+       host: 'us-cdbr-iron-east-02.cleardb.net',                      //host: 'localhost',
+       database: 'heroku_43810dbd834ba85'                         //database: 'sopizza'
 
 
 
