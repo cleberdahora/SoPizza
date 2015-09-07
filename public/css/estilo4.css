@@ -1,0 +1,121 @@
+
+#hero-unit{
+    background-color: #ffea66;
+}
+.fundo{
+    background-color:#FFD98A;
+    background-image:url('http://res.cloudinary.com/hhktgqpms/image/upload/v1438017931/background_ccnxtw.png');
+
+
+}
+.h1{
+    color:white;
+    
+}
+
+.h3{
+    color:white;
+}
+
+.b2{
+    font-size:22px;
+    background: #009933;
+    width:120px;
+    color:white;
+    height:40px;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    box-shadow: 1px 1px 1px 1px black;
+
+
+}
+.b3{
+    font-size:22px;
+    background: #009933;
+    width:120px;
+    color:white;
+    height:40px;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    box-shadow: 1px 1px 1px 1px black;
+    margin-left: 50px;
+}
+
+.b4{
+    font-size:22px;
+    background: #009933;
+    width:120px;
+    color:white;
+    height:40px;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    box-shadow: 1px 1px 1px 1px black;
+    margin-left: 50px;
+}
+
+.input[type="text"]{
+    position:relative;
+    margin-top: -480px;
+    font-size:17px;
+    border-radius: 0;
+    height:33px;
+    border-bottom: 0;
+    margin-top: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    padding: 4px 150px;
+    box-shadow: 0.07em 0.07em 0.05em 0.05em  black;
+}
+.preco[type="text"]{
+    position:relative;
+    margin-top: -480px;
+    font-size:17px;
+    border-radius: 0;
+    height:33px;
+    border-bottom: 0;
+    margin-top: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    padding: 4px 50px;
+    box-shadow: 0.07em 0.07em 0.05em 0.05em  black;
+}
+.ingredientes[type="text"]{
+    position:relative;
+    margin-top: -480px;
+    font-size:17px;
+    border-radius: 0;
+    height:33px;
+    border-bottom: 0;
+    margin-top: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    padding: 4px 50px;
+    box-shadow: 0.07em 0.07em 0.05em 0.05em  black;
+}
+.date[type="date"]{
+    position:relative;
+    margin-top: -480px;
+    font-size:17px;
+    border-radius: 0;
+    height:33px;
+    border-bottom: 0;
+    margin-top: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    padding: 4px 50px;
+    box-shadow: 0.07em 0.07em 0.05em 0.05em  black;
+}
+
+@media (max-width: 767px) {
+
+}

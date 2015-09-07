@@ -8,12 +8,10 @@ var fs = require('fs');
 router.get('/', function (req, res) {
 
     var connection = mysql.createConnection({
-      user: 'b38e48d43b7b86',                             //user: 'root',
-       password: '9c107321f978bc6',                             //password: 'cletha415623',
+       user: 'b442f97908503f', // user: 'b38e48d43b7b86',                             //user: 'root',
+       password: '10b3b2e1',                             //password: 'cletha415623',
        host: 'us-cdbr-iron-east-02.cleardb.net',                      //host: 'localhost',
-       database: 'heroku_43810dbd834ba85'                         //database: 'sopizza'
-
-
+       database: 'heroku_c9eb4a3b9a8e642'                         //database: 'sopizza'
 
     });
 
