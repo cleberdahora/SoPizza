@@ -66,6 +66,7 @@
                     var PizzariaEndereco;
                     var PizzariaEmail;
                     var PizzariaTelefone;
+                    var PizzariaTelefone2;
                     var PizzariaWhatsApp;
                     var PizzariaLogo;
                     var PizzariaInformacoes;
@@ -568,8 +569,10 @@
 
 
                     var imagem = 'http://res.cloudinary.com/hih0bvg21/image/upload/v1441298095/pizzalado_cm5rl9.png';
+                    
+                    var PizzariaFoto1;
 
-
+ var PizzariaFoto2; var PizzariaFoto3; var PizzariaFoto4; var PizzariaFoto5; var PizzariaFoto6;
 
 
 
@@ -580,8 +583,15 @@
                             PizzariaEndereco = ponto.Endereco;
                             PizzariaEmail = ponto.Email;
                             PizzariaTelefone = ponto.Telefone;
+                            PizzariaTelefone2 = ponto.Telefone;
                             PizzariaWhatsApp = ponto.Whatsapp;
                             PizzariaLogo = ponto.fotoLogo;
+                            PizzariaFoto1 = ponto.foto1;
+                            PizzariaFoto2 = ponto.foto2;
+                            PizzariaFoto3 = ponto.foto3;
+                            PizzariaFoto4 = ponto.foto4;
+                            PizzariaFoto5 = ponto.foto5;
+                            PizzariaFoto6 = ponto.foto6;
                             PizzariaInformacoes = ponto.Informacoes;
                             PizzariaDia1 = ponto.dia1;
                             PizzariaHorario1 = ponto.horario1;
@@ -1130,9 +1140,17 @@
                     $('#divNome').html(PizzariaNome);
                     $('#divEndereco').html(PizzariaEndereco);
                     $('#divEmail').html(PizzariaEmail);
-                    $('#divTelefone').html(PizzariaTelefone);
+                    $('#divTelefone').attr('href','tel:'+ PizzariaTelefone);
+                    $('#divTelefone2').attr('href','tel:'+ PizzariaTelefone2);
                     $('#divWhatsapp').html(PizzariaWhatsApp);
                     $('#divLogo').attr('src', PizzariaLogo);
+                    $('#foto1').attr('src', PizzariaFoto1);
+                    $('#foto2').attr('src', PizzariaFoto2);
+                    $('#foto3').attr('src', PizzariaFoto3);
+                    $('#foto4').attr('src', PizzariaFoto4);
+                    $('#foto5').attr('src', PizzariaFoto5);
+                    $('#foto6').attr('src', PizzariaFoto6);
+                    
                     $('#divInformacoes').html(PizzariaInformacoes);
                     $('#divDia1').html(PizzariaDia1);
                     $('#divHorario1').html(PizzariaHorario1);
@@ -1730,7 +1748,60 @@
                     $('#divPreco115').html(PizzariaPreco115);
                     $('#divIngredientes115').html(PizzariaIngredientes115);
                     $('#imagem115').attr('src', imagem);
-
+                    
+                     if (PizzariaSabor27 == "")
+                    {
+                        $("#imagem27").css("display", "none");
+                    }
+                     if (PizzariaSabor28 == "")
+                    {
+                        $("#imagem28").css("display", "none");
+                    }
+                     if (PizzariaSabor29 == "")
+                    {
+                        $("#imagem29").css("display", "none");
+                    }
+                     if (PizzariaSabor30 == "")
+                    {
+                        $("#imagem30").css("display", "none");
+                    }
+                     if (PizzariaSabor31 == "")
+                    {
+                        $("#imagem31").css("display", "none");
+                    }
+                     if (PizzariaSabor32 == "")
+                    {
+                        $("#imagem32").css("display", "none");
+                    }
+                     if (PizzariaSabor33 == "")
+                    {
+                        $("#imagem33").css("display", "none");
+                    }
+                     if (PizzariaSabor34 == "")
+                    {
+                        $("#imagem34").css("display", "none");
+                    }
+                     if (PizzariaSabor35 == "")
+                    {
+                        $("#imagem35").css("display", "none");
+                    }
+                     if (PizzariaSabor36 == "")
+                    {
+                        $("#imagem36").css("display", "none");
+                    }
+                     if (PizzariaSabor37 == "")
+                    {
+                        $("#imagem37").css("display", "none");
+                    }
+                     if (PizzariaSabor38 == "")
+                    {
+                        $("#imagem38").css("display", "none");
+                    }
+                     if (PizzariaSabor39 == "")
+                    {
+                        $("#imagem39").css("display", "none");
+                    }
+                   
                     if (PizzariaSabor40 == "")
                     {
                         $("#imagem40").css("display", "none");

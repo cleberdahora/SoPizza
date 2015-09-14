@@ -6,7 +6,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "cloudinary":"*",
+    "cloudinary": "*",
     "body-parser": "~1.5.2",
     "browserify": "*",
     "browserify-fs": "*",
@@ -17,7 +17,7 @@
     "method-override": "~2.1.2",
     "morgan": "~1.2.2",
     "mysql": "*",
-    "mongoose":"*",
+    "mongoose": "*",
     "routes": "*"
   },
   "engines": {
@@ -27,5 +27,16 @@
     "type": "git",
     "url": "https://github.com/heroku/so-pizza-brasil2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "bugs": {
+    "url": "https://github.com/heroku/so-pizza-brasil2/issues"
+  },
+  "homepage": "https://github.com/heroku/so-pizza-brasil2",
+  "devDependencies": {},
+  "keywords": [
+    "sopizza"
+  ]
 }

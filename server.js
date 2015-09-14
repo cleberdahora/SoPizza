@@ -6,6 +6,7 @@ var app = express();
 var cloudinary = require('cloudinary');
 var consult = require('./routes/consulta');
 var consultcard = require('./routes/consulta_card');
+var sugestoes = require('./routes/consulta_sugestoes');
 
 var mysql = require('mysql');
 
@@ -36,7 +37,7 @@ app.get('/', function (request, response) {
 
 app.use('/consult', consult);
 app.use('/cardap', consultcard);
-
+app.use('/sugestoes', sugestoes);
 
 
 

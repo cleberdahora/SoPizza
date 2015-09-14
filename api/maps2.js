@@ -34,7 +34,7 @@ function carregarPontos() {
                         });
 
                         var infowindow = new google.maps.InfoWindow({
-                            content: "<a href='#' target=''>"+ ponto.Nome +"</a>",
+                            content: "<a href='#'  target=''>"+ ponto.Nome +"</a>",
                             maxWidth: 700
                         });
 
