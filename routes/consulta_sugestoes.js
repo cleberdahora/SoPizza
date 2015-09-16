@@ -6,6 +6,8 @@ var fs = require('fs');
 
 
 router.get('/', function (req, res) {
+    var latitude = req.query.latitude;
+    var longitude = req.query.longitude;
 
     var connection = mysql.createConnection({
        user: 'b442f97908503f', // user: 'b38e48d43b7b86',                             //user: 'root',
@@ -15,12 +17,12 @@ router.get('/', function (req, res) {
 
     });
 
-    connection.query('SELECT Nome,Endereco,fotoLogo,Latitude,Longitude, ( 6371 * acos( cos( radians(-23.616617299999998) ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians(-46.5981689) ) + sin( radians(-23.616617299999998) ) * sin( radians( latitude ) ) ) ) AS distance FROM dados HAVING distance < 4 ORDER BY distance LIMIT 0 , 20', function (err, rows, fields) {
+    connection.query('SELECT Nome,Endereco,fotoLogo,Latitude,Longitude, ( 6371 * acos( cos( radians(' + latitude + ') ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians(' + longitude + ') ) + sin( radians(' + latitude + ') ) * sin( radians( latitude ) ) ) ) AS distance FROM dados HAVING distance < 4 ORDER BY distance LIMIT 0 , 20', function (err, rows, fields) {
         if (!err)
         {
-            res.send(rows);        
+            res.send(rows);
         }
-        
+
         else
             console.log('Error while performing Query.');
     });
